@@ -1,0 +1,49 @@
+@import "shared/styles/variables";
+
+.toolbar {
+  height: 100%;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  gap: 30px;
+  align-items: center;
+
+  &__btn,
+  input {
+    cursor: pointer;
+    transition: 0.2s ease transform;
+  }
+
+  &__btn:hover,
+  input:hover {
+    transform: scale(1.1);
+  }
+
+  &__btns.undo_redo {
+
+    display: flex;
+    gap: 5px;
+  }
+
+  &__btn.upload {
+    margin-top: auto;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  #icon_load {
+    display: none;
+  }
+
+  input {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+}

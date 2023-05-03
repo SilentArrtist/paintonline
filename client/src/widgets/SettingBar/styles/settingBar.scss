@@ -1,0 +1,35 @@
+@import "shared/styles/variables";
+
+.setting-bar {
+  height: 7vh;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 0 10px;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+
+  input {
+    cursor: pointer;
+    transition: 0.2s ease transform;
+  }
+
+  input:hover {
+    transform: scale(1.1);
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  input#line-width {
+    margin: 0 !important;
+  }
+}
